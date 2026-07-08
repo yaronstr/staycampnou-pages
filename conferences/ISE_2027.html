@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISE_2027 — Apartments near Fira Gran Via</title>
+    <style>
+        body {
+            font-family: system-ui, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #4a4a4a;
+            background-color: #ffffff;
+        }
+        .hero {
+            background-image: url('https://commons.wikimedia.org/wiki/Special:FilePath/Entrada%20al%20Salo%20Nautic%20-%20Gran%20Via%20venue%20of%20Fira%20de%20Barcelona.JPG');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(26,39,68,0.75);
+            z-index: 1;
+        }
+        .hero h1 {
+            z-index: 2;
+            font-size: 2.5em;
+        }
+        .hero .dates {
+            z-index: 2;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .hero .description {
+            z-index: 2;
+            margin: 20px 0;
+        }
+        .button {
+            background-color: #C9A24B;
+            color: #1a2744;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            margin: 10px;
+        }
+        .whatsapp-button {
+            background-color: #25D366;
+        }
+        .why-stay {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            padding: 40px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            padding: 20px;
+            text-align: center;
+        }
+        .discover-barcelona {
+            display: flex;
+            flex-direction: column;
+            padding: 40px;
+        }
+        .discover-image {
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        .ideal-stay {
+            padding: 40px;
+            text-align: center;
+        }
+        .event-info {
+            padding: 40px;
+            text-align: center;
+        }
+        footer {
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+        }
+        @media (max-width: 600px) {
+            .why-stay {
+                grid-template-columns: 1fr;
+            }
+            .discover-barcelona {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>ISE_2027 — Apartments near Fira Gran Via</h1>
+        <div class="dates">Dates: February 2-5, 2027</div>
+        <div class="description">Stay 10 minutes from Fira Gran Via — ideal for the full week of the event</div>
+        <a href="https://staycampnou.com" class="button">BOOK NOW</a>
+        <a href="https://wa.me/34618254217" class="button whatsapp-button">WhatsApp Us</a>
+    </div>
+
+    <section class="why-stay">
+        <div class="card">10 minutes to Fira Gran Via — perfect for early starts and late networking</div>
+        <div class="card">Full apartments with kitchen and workspace — better than a hotel room for a working week</div>
+        <div class="card">Book direct for the best available price, invoices available for business travel</div>
+    </section>
+
+    <section class="discover-barcelona">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/La%20Sagrada%20Familia%20Barcelona.jpg" alt="Sagrada Família" class="discover-image">
+        <p>After your conference days, Barcelona's icons like the Sagrada Família are a short ride away — a good base for both business and a taste of the city.</p>
+    </section>
+
+    <section class="ideal-stay">
+        <p>Comfortable apartments for 2 to 6 guests, suited to individuals, colleagues sharing, or small exhibitor teams staying the full event.</p>
+        <a href="https://staycampnou.com" class="button">BOOK NOW</a>
+    </section>
+
+    <section class="event-info">
+        <p>The event will take place from February 2-5, 2027, at Fira Gran Via in Barcelona.</p>
+    </section>
+
+    <footer>
+        StayCampNou · staycampnou.com · L'Hospitalet de Llobregat, Barcelona
+    </footer>
+</body>
+</html>
