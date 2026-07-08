@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manga Barcelona 2026 - StayCampNou</title>
+    <style>
+        body {
+            font-family: system-ui, Arial, sans-serif;
+            font-size: 17px;
+            line-height: 1.6;
+            margin: 0;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 32px;
+            color: white;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin: 24px 0 12px;
+        }
+
+        .hero {
+            background-image: url('https://yaronstr.github.io/staycampnou-pages/images/fira-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            min-height: 380px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 16px;
+        }
+
+        .overlay {
+            background-color: rgba(26, 39, 68, 0.85);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+        }
+
+        .dates {
+            color: #C9A24B;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 8px 0;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+            z-index: 1;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 16px 40px;
+            border-radius: 8px;
+            font-size: 17px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .book-button {
+            background-color: #C9A24B;
+            color: #1a2744;
+            border: none;
+        }
+
+        .whatsapp-button {
+            background-color: #25D366;
+            color: white;
+            border: none;
+        }
+
+        .why-stay {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            padding: 24px;
+        }
+
+        .card {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+            border-radius: 10px;
+            padding: 28px;
+            font-size: 16px;
+        }
+
+        .discover {
+            padding: 24px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .ideal-stay {
+            padding: 24px;
+        }
+
+        .footer {
+            background: #1a2744;
+            color: white;
+            padding: 24px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 28px;
+            }
+
+            .why-stay {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .buttons {
+                flex-direction: column;
+            }
+
+            .hero {
+                padding: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero">
+        <div class="overlay">
+            <h1>Manga Barcelona 2026</h1>
+            <div class="dates">December 5 - December 8, 2026</div>
+            <p>Stay 10 minutes from Fira Gran Via — ideal for the full week of the event</p>
+            <div class="buttons">
+                <a href="https://staycampnou.com" class="button book-button">BOOK NOW</a>
+                <a href="https://wa.me/34618254217" class="button whatsapp-button">WhatsApp Us</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="why-stay">
+        <div class="card">10 minutes to Fira Gran Via — perfect for early starts and late networking</div>
+        <div class="card">Full apartments with kitchen and workspace — better than a hotel room for a working week</div>
+        <div class="card">Book direct for the best available price, invoices available for business travel</div>
+    </section>
+
+    <section class="discover">
+        <h2>Discover Barcelona</h2>
+        <div class="gallery">
+            <img src="https://yaronstr.github.io/staycampnou-pages/images/sagrada-familia.jpg" alt="Sagrada Família">
+            <img src="https://yaronstr.github.io/staycampnou-pages/images/placa-espanya.jpg" alt="Plaça Espanya">
+            <img src="https://yaronstr.github.io/staycampnou-pages/images/barcelona-mosaic.jpg" alt="Barcelona street scene">
+        </div>
+        <p>After your conference days, Barcelona's icons are a short ride away — a good base for both business and a taste of the city.</p>
+    </section>
+
+    <section class="ideal-stay">
+        <p>Comfortable apartments for 2 to 6 guests, suited to individuals, colleagues sharing, or small exhibitor teams staying the full event.</p>
+        <a href="https://staycampnou.com" class="button book-button">BOOK NOW</a>
+    </section>
+
+    <section class="event-info">
+        <p>The Manga Barcelona 2026 will be held from December 5 to December 8, 2026, at Fira Gran Via in Barcelona.</p>
+    </section>
+
+    <footer class="footer">
+        StayCampNou · staycampnou.com · L'Hospitalet de Llobregat, Barcelona
+    </footer>
+</body>
+
+</html>
